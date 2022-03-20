@@ -3,6 +3,12 @@ const prev = document.getElementById('prev')
 const next = document.getElementById('next')
 const circles = document.querySelectorAll('.circle')
 
+const targetDiv1 = document.getElementById("firstQ");
+const targetDiv2 = document.getElementById("secondQ");
+const targetDiv3 = document.getElementById("thirdQ");
+const targetDiv4 = document.getElementById("fourthQ");
+
+
 let currentActive = 1
 
 next.addEventListener('click', () => {
@@ -11,6 +17,8 @@ next.addEventListener('click', () => {
     if(currentActive > circles.length) {
         currentActive = circles.length
     }
+
+    showQuizQ(currentActive)
 
     update()
 })
@@ -21,6 +29,8 @@ prev.addEventListener('click', () => {
     if(currentActive < 1) {
         currentActive = 1
     }
+
+    showQuizQ(currentActive)
 
     update()
 })
@@ -45,6 +55,39 @@ function update(){
         prev.disabled = false
         next.disabled = false
     }
+
+}
+
+function showQuizQ(num){
+
+    
+    if (currentActive === 1) {
+        targetDiv1.style.display = "block";
+        targetDiv2.style.display = "none";
+        targetDiv3.style.display = "none";
+        targetDiv4.style.display = "none";
+    }
+    
+    if (currentActive === 2) {
+        targetDiv1.style.display = "none";
+        targetDiv2.style.display = "block";
+        targetDiv3.style.display = "none";
+        targetDiv4.style.display = "none";
+      }
+
+    if (currentActive === 3) {
+        targetDiv1.style.display = "none";
+        targetDiv2.style.display = "none";
+        targetDiv3.style.display = "block";
+        targetDiv4.style.display = "none";
+      }
+
+    if (currentActive === 4) {
+        targetDiv1.style.display = "none";
+        targetDiv2.style.display = "none";
+        targetDiv3.style.display = "none";
+        targetDiv4.style.display = "block";
+      }
 
 }
 

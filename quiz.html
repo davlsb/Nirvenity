@@ -29,6 +29,50 @@
             <div class="circle">3</div>
             <div class="circle">4</div>
         </div>
+        <form action="">
+            <div class="quizQuestion" id="firstQ">
+                <h1>What's Your Name?</h1>
+                <label for="firstname">First Name</label><br>
+                <input type="text" id="firstname" name="firstname" placeholder="What's your first name?">
+                <br>
+                <label for="lastname">Last Name</label><br>
+                <input type="text" id="lastname" name="lastname" placeholder="What's your last name?"">
+            </div>
+            <div class="quizQuestion" id="secondQ">
+                <label for="country"><h1>What Country are you From?</h1></label> <br>
+                <select id="country" name="country">
+                    <option value="usa">United States of America</option>
+                    <option value="canada">Canada</option>
+                    <option value="guyana">Guyanese</option>
+                    <option value="bangladesh">Bangladesh</option>
+                </select>
+            </div>
+            <div class="quizQuestion" id="thirdQ">
+                <h1>What's Your Favourite Color?</h1>
+                <class name="typeRadios">
+                    <input type="radio" id="white" name="type" value="white">
+                    <label for="white">White</label><br>
+                    <input type="radio" id="red" name="type" value="red">
+                    <label for="red">Red</label><br>
+                    <input type="radio" id="red" name="type" value="red">
+                    <label for="red">Blue</label><br>
+                    <input type="radio" id="red" name="type" value="red">
+                    <label for="red">Black</label><br>
+                    <input type="radio" id="red" name="type" value="red">
+                    <label for="red">Yellow</label><br>
+                    <input type="radio" id="red" name="type" value="red">
+                    <label for="red">Green</label><br>
+                    <input type="radio" id="red" name="type" value="red">
+                    <label for="red">Pink</label><br>
+                    </class>
+            </div>
+            <div class="quizQuestion" id="fourthQ">
+                <h1>What's Your Favourite Verse?</h1>
+                <textarea id="verse" name="verse" placeholder="My favourite verse is..." style="height:200px"></textarea>
+                <br>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
         <section class="buttons">
             <button class="btn" id="prev" disabled>Prev</button>
             <button class="btn" id="next">Next</button>
