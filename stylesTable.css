@@ -1,0 +1,49 @@
+
+.weeklyTable{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 2em;
+    line-height: 2em;
+}
+
+.weeklyTable tr:first-child th:first-child {
+    border-top-left-radius: 16px;
+  }
+
+.weeklyTable tr:first-child th:last-child {
+    border-top-right-radius: 16px;
+}
+
+.weeklyTable tr:last-child td:first-child {
+    border-bottom-left-radius: 16px;
+}
+
+.weeklyTable tr:last-child td:last-child {
+    border-bottom-right-radius: 16px;
+}
+
+.weeklyTable tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.weeklyTable tr:hover {
+    background-color: #ffc0cbf1;
+    color:black;
+    border-radius: 16px;
+}
+
+.weeklyTable tr{
+    padding: 3em 3em;
+}
+
+.weeklyTable th {
+  background-color: #539e8a;
+  color: white;
+  padding: 0.5em 4em;
+  line-height: 1.5;
+}
+
+.weeklyTable #trimester{
+    background-color: #3d7566;
+}

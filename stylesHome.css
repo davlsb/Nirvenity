@@ -1,0 +1,69 @@
+.blur {
+  filter: blur(0px);
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    transition: opacity .2s, visibility .2s;
+    transition-duration: 0.4s;
+  }
+  .one {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .two {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .three {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .four {
+    grid-column: 4;
+    grid-row: 1;
+  }
+  .five {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .six {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .seven {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .eight {
+    grid-column: 4;
+    grid-row: 2;
+  }
+
+
+.clothImage img{
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 1em;
+    margin-bottom: -3.4em;
+}
+
+.clothText {
+    opacity: 0%;
+    color:#2e2e2e;
+    position:relative;
+    padding-left: 1em;
+    border-radius: 1em;
+    padding-bottom: 0;
+    background: linear-gradient(#ffc0cb00, #ffc0cb77, #ffc0cbad, #ffc0cbbd,  #ffc0cbb0, #ffc0cbf1);
+    transition-duration: 0.4s;
+}
+
+.clothImage:hover + .clothText {
+    opacity: 100%;
+    pointer-events:none;
+}

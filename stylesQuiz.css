@@ -1,0 +1,82 @@
+:root{
+    --line-border-fill: #539e8a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.container{
+    margin: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.progress-container{
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width:350px;
+}
+
+.progress-container::before{
+    content: '';
+    background-color: rgb(206, 206, 206);
+    position: absolute;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+    transform: 0.4s ease;
+}
+
+.progress{
+    background-color: green;
+    position: absolute;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 0%;
+    z-index: -1;
+    transform: 0.4s ease;
+}
+
+.circle{
+    background-color: #fff;
+    color:#999;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    text-align: center;
+    border: 3px solid #e0e0e0;
+    transition: 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle.active{
+    border-color: green;
+}
+
+.btn:focus{
+    outline: 0;
+}
+
+.btn:disabled{
+    background-color: rgb(196, 196, 196) ;
+    cursor: not-allowed;
+    border-radius: 4px;
+    color:rgb(241, 241, 241)
+}
