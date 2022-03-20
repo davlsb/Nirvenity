@@ -98,5 +98,47 @@
 }
 
 input[type=text], select, textarea {
+    padding: 12px;
+    border: 2px solid #2a2a2a;
+    border-radius: 16px;
     width: 100%;
+    margin: 1em;
+}
+
+input[type=text]:focus, input[type=text]:focus-visible,  select:focus-visible, textarea:focus-visible {
+    outline: 0px dashed #ffc0cb;
+    padding: 12px;
+    border: 2px solid #ffc0cb;
+    border-radius: 16px;
+}
+
+input[type=submit] {
+    background-color: #539e8a;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #ffc0cb;
+    border: none;
+    border-radius: 1em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+#complain, #feedback{
+    display: inline-block;
+    margin: 0.5em
 }
