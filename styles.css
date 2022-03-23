@@ -30,7 +30,7 @@ header{
 }
 
 
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -42,7 +42,7 @@ ul {
     white-space: nowrap;
 }
 
-li {
+nav li {
     width: 100%;
     display: inline;
 }
