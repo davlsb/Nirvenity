@@ -67,3 +67,8 @@
     opacity: 100%;
     pointer-events:none;
 }
+
+.quizButton {
+  cursor: pointer;
+
+}

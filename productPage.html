@@ -5,6 +5,7 @@
     <link href="stylesProducts.css" rel="stylesheet">
     <title>Nirvenity Product</title>
 </head>
+<div class="blur2">
 <header>
     <div class="logo">
         <img src="https://media.discordapp.net/attachments/949160449411272724/954453932380401714/WhiteLogo.png">
@@ -50,8 +51,28 @@
             <button type="button">Add to Cart</button>
         </div>
 
+        <form action="">
+        <br>
+        <h2 for="subject">Review it!</h2>
+
+        <input type="text" id="firstname" name="firstname" placeholder="What's your first name?">
+        <br>
+        <label for="purchaseAgain">Purchase Again?</label>
+        <input type="radio" id="purchaseYes" name="type" value="purchaseYes">
+        <label>Yes</label>
+        <input type="radio" id="purchaseNo" name="type" value="purchaseNo">
+        <label>No</label>
+        <br>
+        <textarea id="subject" name="subject" placeholder="What do you think of the product?" style="height:200px; width: 300px;"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+
+        </form>
+
 
 </main>
+<script src="scriptProduct.js"></script>
 <script src="script.js"></script>
+</div>
 </body>
 </html>

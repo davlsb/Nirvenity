@@ -60,14 +60,14 @@ function update(){
 
 function showQuizQ(num){
 
-    
+
     if (currentActive === 1) {
         targetDiv1.style.display = "block";
         targetDiv2.style.display = "none";
         targetDiv3.style.display = "none";
         targetDiv4.style.display = "none";
     }
-    
+
     if (currentActive === 2) {
         targetDiv1.style.display = "none";
         targetDiv2.style.display = "block";
@@ -91,7 +91,7 @@ function showQuizQ(num){
 
 }
 
-const bg = document.querySelector('.blur2')
+const bg2 = document.querySelector('.blur2')
 
 let load = 0
 let int = setInterval(blurring, 10)
@@ -102,7 +102,7 @@ function blurring(){
     clearInterval(int)
   }
 
-  bg.style.filter = `blur(${scale(load, 0, 50, 10, 0)}px)`
+  bg2.style.filter = `blur(${scale(load, 0, 50, 10, 0)}px)`
 
 }
 
