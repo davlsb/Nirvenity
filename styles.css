@@ -176,3 +176,10 @@ button:hover {
 ::-ms-input-placeholder { /* Microsoft Edge */
     color: rgb(0, 0, 0);
 }
+
+.centerItems{
+    justify-content: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
