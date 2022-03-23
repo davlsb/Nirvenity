@@ -85,7 +85,7 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     transition-duration: 0.4s;
 }
 
@@ -182,4 +182,9 @@ button:hover {
     display: flex;
     margin-left: auto;
     margin-right: auto;
+}
+
+.centerItems > button{
+    height: 4em;
+    margin-top: 10px;
 }

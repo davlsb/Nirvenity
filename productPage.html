@@ -27,14 +27,16 @@
             </div>
         </div>
         <div class="two">
-            <h1>Pink Ish Dress</h1>
-            <p>
+            <h1>Pink Ish Dress <div class="price">$299.99</div> </h1>
+            <p style="font-size:1.3em">
             Our stylish Pink Ish Dress is perfect for the spring weather. Breathable material, bright colors for all shapes and sizes!
+            The Pink Ish Dress is a piece of clothing for the prgnant woman that covers the body, protects the womb, and allows the legs to breathe.
             </p>
             <br>
             <br>
             <div class="centerItems">
-            <label for="size">Size</label><br>
+            <div class="inliner">
+            <label for="size">Size</label>
             <select id="size" name="size">
                 <option value="1">XXS</option>
                 <option value="2">XS</option>
@@ -45,8 +47,10 @@
                 <option value="7">2XL</option>
                 <option value="8">3XL</option>
             </select>
+            </div>
             <br>
-            <label for="month">Month</label><br>
+            <div class="inliner">
+            <label for="month">Month</label>
             <select id="month" name="month">
                 <option value="1">Month 1</option>
                 <option value="2">Month 2</option>
@@ -57,28 +61,36 @@
                 <option value="7">Month 7</option>
                 <option value="8">Month 8</option>
                 <option value="9">Month 9</option>
-            </select><br>
+            </select>
+            </div><br>
+
             <button type="button">Add to Cart</button>
             </div>
         </div>
+    </div>
 
-        <form action="">
-        <br>
-        <h2 for="subject">Review it!</h2>
 
-        <input type="text" id="firstname" name="firstname" placeholder="What's your first name?">
-        <br>
-        <label for="purchaseAgain">Purchase Again?</label>
-        <input type="radio" id="purchaseYes" name="type" value="purchaseYes">
-        <label>Yes</label>
-        <input type="radio" id="purchaseNo" name="type" value="purchaseNo">
-        <label>No</label>
-        <br>
-        <textarea id="subject" name="subject" placeholder="What do you think of the product?" style="height:200px; width: 300px;"></textarea>
-        <br>
-        <input type="submit" value="Submit">
-
-        </form>
+    <div class="centerItems">
+        <div class="formCSS">
+            <form action="">
+            <br>
+            <h2 for="subject">Review it!</h2>
+            <input type="text" id="firstname" name="firstname" placeholder="What's your first name?" style="width: 500px;">
+            <br>
+            <label for="purchaseAgain">Purchase Again?</label>
+            <input type="radio" id="purchaseYes" name="type" value="purchaseYes">
+            <label>Yes</label>
+            <input type="radio" id="purchaseNo" name="type" value="purchaseNo">
+            <label>No</label>
+            <br>
+            <textarea id="subject" name="subject" placeholder="What do you think of the product?" style="height: 200px; width: 500px;"></textarea>
+            <br>
+            <div class="centerItems">
+                <input type="submit" value="Submit" style="height: 200px; width: 500px;">
+            </div>
+            </form>
+        </div>
+    </div>
 
 
 </main>
