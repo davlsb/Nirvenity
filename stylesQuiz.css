@@ -97,7 +97,7 @@
     display: block;
 }
 
-input[type=text], select, textarea {
+input[type=text], input[type=email], select, textarea {
     padding: 12px;
     border: 2px solid #2a2a2a;
     border-radius: 16px;
@@ -105,7 +105,7 @@ input[type=text], select, textarea {
     margin: 1em;
 }
 
-input[type=text]:focus, input[type=text]:focus-visible,  select:focus-visible, textarea:focus-visible {
+input[type=text]:focus, input[type=text]:focus-visible, input[type=email]:focus, input[type=email]:focus-visible,  select:focus-visible, textarea:focus-visible {
     outline: 0px dashed #ffc0cb;
     padding: 12px;
     border: 2px solid #ffc0cb;
